@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran HS - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay loop muted id="bg-video">
+        <source src="D:/resume creater html/2619-865412755_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Music -->
+    <audio id="bg-music" loop>
+        <source src="D:/resume creater html/relaxing-birds-and-piano-music-137153.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>🚀 Welcome to Kiran HS's Space Resume</h1>
+        <p>Press Start to Explore My Journey</p>
+        <button id="start-button">🚀 Press Start</button>
+    </div>
+
+    <!-- Main Game Container -->
+    <div id="game-container" class="hidden">
+        
+        <!-- Profile Screen -->
+        <div id="profile-screen" class="scene">
+            <h2>👨‍🚀 Profile</h2>
+            <p>I'm Kiran HS,Highly motivated and detail-oriented IT professional with one year of hands-on experience in Frontend development and Python programming. Seeking to leverage my skills in creating dynamic, user-friendly web applications and solving complex problems through efficient coding practices. Eager to contribute to a growth-driven organization while continuing to expand my knowledge in emerging technologies and improving user experiences through innovative solutions.</p>
+            <button class="next-button" onclick="showScene('skills-screen')">Next ➡️</button>
+        </div>
+
+        <!-- Skills Screen -->
+        <div id="skills-screen" class="scene hidden">
+            <h2> Skills</h2>
+            <ul>
+                <li>🐍 Python</li>
+                <li> ⚛ React JS</li>
+                <li>🖥 HTML & CSS</li>
+                <li>🗄 SQL</li>
+            </ul>
+            <button class="next-button" onclick="showScene('experience-screen')">Next ➡️</button>
+        </div>
+
+        <!-- Experience Screen -->
+        <div id="experience-screen" class="scene hidden">
+            <h2> Professional Experience</h2>
+            <p>Worked at Magnasoft as Junior Software Developer, focusing on React.js, Python, and PostgreSQL.</p>
+            <button class="next-button" onclick="showScene('projects-screen')">Next ➡️</button>
+        </div>
+
+        <!-- Projects Screen -->
+        <div id="projects-screen" class="scene hidden">
+            <h2>🚀 Projects</h2>
+            <ul>
+                <li>FineCervNet (AI/ML)</li>
+                <li>Grocery List Web App</li>
+                <li>Student Attendance System (Flask)</li>
+            </ul>
+            <button class="next-button" onclick="showScene('contact-screen')">Next ➡️</button>
+        </div>
+
+        <!-- Contact Screen -->
+        <div id="contact-screen" class="scene hidden">
+            <h2>📩 Contact</h2>
+            <p>Email: kiranhs2025@gmail.com</p>
+            <p>Phone: 8152878577</p>
+            <button onclick="restartGame()">Restart 🔄</button>
+        </div>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <div id="music-toggle">
+        <button id="toggle-button">🎵 Music: On</button>
+    </div>
+
+</body>
+</html>
